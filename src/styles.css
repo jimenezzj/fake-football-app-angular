@@ -1,1 +1,170 @@
-/* You can add global styles to this file, and also import other style files */
+/** Fotns **/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+
+@font-face {
+    font-family: "ClMont";
+    src: url("https://app.clicklease.com/jsdk/static/fonts/Mont-Regular.otf") format("opentype");
+    font-weight: 400;
+    /* font-style: normal */
+}
+
+@font-face {
+    font-family: "ClMont";
+    src: url("https://app.clicklease.com/jsdk/static/fonts/Mont-Bold.otf"), format("opentype");
+    font-weight: 700;
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: "ClMont";
+    src: url("https://app.clicklease.com/jsdk/static/fonts/Mont-Light.otf"), format("opentype");
+    font-weight: 300;
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: "ClMont";
+    src: url(./assets/fonts/mont/Mont-SemiBold.otf), format("opentype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "ClMont";
+    src: url(./assets/fonts/mont/Mont-RegularItalic.otf), format("opentype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/** Fonts **/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-3xl font-oxygen font-extrabold;
+    }
+
+    h2 {
+        @apply text-2xl font-oxygen font-extrabold;
+    }
+
+    h3 {
+        @apply text-xl font-oxygen font-extrabold;
+    }
+
+    h4 {
+        @apply text-lg font-oxygen font-extrabold;
+    }
+
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    small,
+    p,
+    i,
+    em,
+    strong,
+    span,
+    li {
+        @apply ease-linear duration-150 transition-all;
+    }
+}
+
+/** Defaults **/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #4be06c;
+    --clr-secondary: #380261;
+    --clr-light: #fafafa;
+    --clr-dark: #202124;
+
+    --ff-primary: "ClMont", sans-serif;
+    --ff-secondary: 'Oxygen', sans-serif;
+    --ff-tertiary: 'Oxygen Mono', monospace;
+
+    --fw-thin: "";
+    --fw-reg: "";
+    --fw-semi-bold: "";
+    --fw-bold: "";
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-secondary), sans-serif;
+    background-color: var(--clr-dark-back);
+    font-size: 15px;
+    color: var(--clr-light);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    /* line-height: 1.1;
+    margin: 0;
+    font-family: var(--ff-primary); */
+}
+
+
+code,
+p,
+small,
+span {
+    font-family: var(--ff-secondary), monospace;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+small,
+p,
+li {
+    color: var(--clr-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.12rem;
+    border: 2px solid transparent;
+    background-color: var(--clr-dark-back);
+    font-family: var(--ff-primary);
+    color: var(--clr-light);
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/** Defaults **/

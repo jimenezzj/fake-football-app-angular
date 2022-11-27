@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting step
-        run: echo "Hello World!"
+        run: | 
+          echo "Hello World!"
+          echo "Im computing really noting"
       - name: Good Bye step
         run: echo "Done - Bye"

@@ -1,0 +1,20 @@
+name: Test FakeFootball App
+on:
+  push: 
+    - 'master'
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install NodeJS 
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Gets the code 
+        uses: actions/checkout@v3
+        with:
+          ref: master
+      - name: Install dependencies
+        run: npm ci 
+      - name: Test the project
+        run: echo "Project is performing a fake testing..." 
